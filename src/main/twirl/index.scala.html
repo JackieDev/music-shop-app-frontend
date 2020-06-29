@@ -1,0 +1,57 @@
+@import models.MusicProduct
+
+@(maybeProducts: Option[List[MusicProduct]], errorMsg: String)
+
+<html>
+<head>
+    <style>
+        th, td {
+                text-align:center;
+                border:1px solid black;
+                padding:5px
+            }
+    </style>
+</head>
+<body>
+<title>Music shop - Search engine frontend</title>
+
+<form action="http://localhost:7001/search/" method="get" enctype="multipart/form-data">
+    <input type="text" name="search">
+    <button type="submit" id="searchBtn">Search</button>
+</form>
+
+<p><a href="http://localhost:7001/search/guitar">Search Guitars</a></p>
+<p><a href="http://localhost:7001/search-category/guitars">Search Guitars Category</a></p>
+<p><a href="http://localhost:7001/search-category/drums">Search Drums Category</a></p>
+<p><a href="http://localhost:7001/all-products">View All Products</a></p>
+
+<br/>
+
+@maybeProducts match {
+  case Some(products) => {
+    <h3>Search Results</h3>
+      <table>
+          <tr><th style="width:160px">Name</th>
+              <th style="width:190px">Description</th>
+              <th style="width:140px">Cost</th>
+          </tr>
+          @for(product <- products) {
+              <tr><td>@product.name</td>
+                  <td>@product.description</td>
+                  <td>@product.price</td>
+              </tr>
+          }
+      </table>
+
+  }
+  case None => {
+    <p>There were no products found matching your search criteria</p>
+  }
+}
+
+@if(errorMsg != "") {
+    <h5>Error: errorMsg</h5>
+}
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/sbt/sbt-twirl_2.12_1.0/1.5.0/sbt-twirl-1.5.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/sbt/sbt-twirl_2.12_1.0/1.5.0/sbt-twirl-1.5.0.pom.sha1
+[debug] downloaded https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.12/sbt_1.0/1.5.0/ivys/ivy.xml
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.12/1.5.0/twirl-compiler_2.12-1.5.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.12/1.5.0/twirl-parser_2.12-1.5.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.5.0/twirl-api_2.12-1.5.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/twirl-compiler_2.12/1.5.0/twirl-compiler_2.12-1.5.0.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/twirl-api_2.12/1.5.0/twirl-api_2.12-1.5.0.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/typesafe/play/twirl-parser_2.12/1.5.0/twirl-parser_2.12-1.5.0.jar
+[debug] downloaded https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-twirl/scala_2.12/sbt_1.0/1.5.0/jars/sbt-twirl.jar

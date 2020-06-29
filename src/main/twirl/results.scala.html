@@ -1,0 +1,34 @@
+@import models.MusicProduct
+
+@(product: Option[MusicProduct], errorMsg: String)
+
+<html>
+<body>
+<title>Music shop - Search engine frontend</title>
+
+<form action="http://localhost:7001/search/guitar" method="get" enctype="multipart/form-data">
+    <input type="text" name="search">
+    <button type="submit" id="searchBtn">Search</button>
+</form>
+
+<p><a href="http://localhost:7001/search/guitar">Search Guitars</a></p>
+
+@product match {
+  case Some(p) => {
+    <h5>Search Result</h5>
+      <ul>
+        <li>Name: p.name, Description: p.description, Cost: p.price</li>
+      </ul>
+  }
+
+  case None => {
+    <p>There were no products found matching your search criteria</p>
+   }
+}
+
+@if(errorMsg != "") {
+  <h5>Error: errorMsg</h5>
+}
+
+</body>
+</html>

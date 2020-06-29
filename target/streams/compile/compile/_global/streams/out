@@ -1,0 +1,4 @@
+[error] C:\Users\YS1607131010\Desktop\music-shop-app-frontend\src\main\scala\routes\AddProductRoutes.scala:16:74: could not find Lazy implicit value of type io.circe.generic.encoding.DerivedAsObjectEncoder[play.twirl.api.HtmlFormat.Appendable]
+[error]   implicit val htmlEncode: Encoder[HtmlFormat.Appendable] = deriveEncoder[HtmlFormat.Appendable]
+[error]                                                                          ^
+[error] one error found

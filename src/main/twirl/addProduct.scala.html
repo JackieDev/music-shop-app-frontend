@@ -1,0 +1,24 @@
+@(addMsg: String)
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+</head>
+<body>
+
+<form name="add-product" action="/add-product" method="post">
+    <p>Id: <input type="number" name="id"/></p>
+    <p>Name: <input type="text" name="name"/></p>
+    <p>Description: <input type="text" name="des"/></p>
+    <p>Price: <input type="text" name="price"/></p>
+    <p>Category: <input type="text" name="cat"/></p>
+    <button type="submit">Add</button>
+</form>
+
+@if(addMsg != "") {
+  <h5>Add product result: addMsg</h5>
+}
+
+</body>
+</html>
